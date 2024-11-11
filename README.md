@@ -8,7 +8,8 @@ Quick Shape Library for inserting predefined shapes into a Xournal++ document vi
    - `C:\Users\<user>\AppData\Local\xournalpp\plugins\` on Windows 
      *Note: The `AppData` folder may be hidden.*
    - `~/.config/xournalpp/plugins` on Linux or MacOS
-   *Note:I suggest a letter "Z" at the first of the folder name because this plugin creats lots of plugin menue and adding a "z" will help to keep the items at the bottom and your other plugins will be easily accessible.*
+     
+   *Note: I suggest a letter "Z" at the first of the folder name because this plugin creats lots of plugin menue and adding a "z" will help to keep the items at the bottom and your other plugins will be easily accessible.*
 
 1. **Place the icons** in:
    - `C:\Users\<user>\AppData\Local\share\icons\hicolor\scalable\actions` on Windows,
