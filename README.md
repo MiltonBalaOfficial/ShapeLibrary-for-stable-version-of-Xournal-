@@ -4,7 +4,7 @@ Quick Shape Library for inserting predefined shapes into a Xournal++ document vi
 
 ## Installation Steps
 
-1. **Place the folder** (`ZShapeLibrary`) in: (Create a folder of this name and place everything downloaded from here)
+1. **Place the folder** (`ZShapeLibrary`) in: (Create a folder of this name and place everything from the `ShapeLibrary(for stable version)` downloaded from here)
    - `C:\Users\<user>\AppData\Local\xournalpp\plugins\` on Windows 
      *Note: The `AppData` folder may be hidden.*
    - `~/.config/xournalpp/plugins` on Linux or MacOS
