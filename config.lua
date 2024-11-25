@@ -8,12 +8,12 @@ local _M = {
     [1] = {
         name = "Page Decoration",
         shapes = {
-            [1] = { name = "Border Booklet", shapeName = "borderBooklet" }, -- here "name" parameter is seen in dialog as option, so it should be Clearly readable
-            [2] = { name = "Star-1", shapeName = "star" },
-            [3] = { name = "Star-2", shapeName = "star2" },
+            [1] = { name = "Border Booklet(📖)", shapeName = "borderBooklet" }, -- here "name" parameter is seen in dialog as option, so it should be Clearly readable
+            [2] = { name = "Star (⚝)", shapeName = "star" },
+            [3] = { name = "Star (★)", shapeName = "star2" },
             [4] = { name = "Curly Arrow", shapeName = "curlyArrow" },
-            [5] = { name = "Decore-2", shapeName = "decore2" },
-            [6] = { name = "Decore-3", shapeName = "decore3" },
+            [5] = { name = "Comment Box (▢)", shapeName = "commentBoxRectangular" },
+            [6] = { name = "Comment Box (⬭)", shapeName = "commentBoxOval" },
             --  [7] = { name = "My Shape", shapeName = "myShape" },  -- Add your won shape like this
         },
     },
