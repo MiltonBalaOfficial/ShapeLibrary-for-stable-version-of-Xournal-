@@ -169,27 +169,17 @@ function store_stroke_info_in_file()
     -- Close the file
     file:close()
 
-     -- Triggering the dialog for confirmation of saving of the shape.
-     app.openDialog(
-         "Your shape is saved as ' I_am_your_new_shape.lua ' \n * You should rename it and place it in 'Shapes' folder. \n * You must add your shape name in 'config' file \n Do you want to rename it now?", {"OK", "Cancel"}, "renameShapeDialogCallback" ) 
-    function renameShapeDialogCallback(result)
-         if result == 2 then
-             -- When "Cancel" option is clicked, it closes the dialog
-             return
-         elseif result == 1 then
-             openFolder() -- If 'OK' is clicked then the plugin folder will open
-         end
-     end
-    function openFolder()
-       -- On Windows, use 'start' command to open the folder
+
+    local result = app.msgbox("Your shape is saved as ' I_am_your_new_shape.lua ' \n * You should rename it and place it in 'Shapes' folder. \n * You must add your shape name in 'config' file \n Do you want to rename it now?", {[1] = "Yes", [2] = "No"})
+
+    if result == 1 then 
+        -- On Windows, use 'start' command to open the folder
         if package.config:sub(1, 1) == "\\" then
             os.execute('start "" "' .. sourcePath .. '"')
         else
-            -- For Linux/Mac, use the appropriate command
+        -- For Linux/Mac, use the appropriate command
             os.execute('xdg-open "' .. sourcePath .. '"') -- Linux
             os.execute('open "' .. sourcePath .. '"')     -- MacOS
         end
     end
-
 end
-
